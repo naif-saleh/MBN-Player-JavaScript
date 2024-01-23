@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBN Music Player</title>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <!-- Css Links -->
+    <link rel="stylesheet" href="Style Sheet/MBN Style.css">
+</head>
+<body>
+    
+    <div class="player-main">
+        <img src="images/logo.jfif" alt="logo-player">
+        <h2><span id="color-h2">Alan</span> Walker</h2>
+        <p id="name_music">The name of music</p>
+
+        <article class="buttons">
+            <img src="images/back.jfif" alt="back-music" id="back_music">
+            <img src="images/pause.jfif" alt="play-music" id="play_music">
+            <img src="images/next.jfif" alt="next-music" id="next_music">
+           
+            <audio src="music/music.mp3" id="audio_file"></audio>
+        </article>
+
+        <article class="volume-contrlos">
+            <h3>Volume Size</h3>
+            <input type="range" name="" id="volume_size">
+            <h3>Volume Speed</h3>
+            <input type="range" name="" id="volume_speed">
+        </article>
+    </div>
+
+
+
+    <!-- Java Script Links -->
+    <script src="Java Script/MBN logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script>
+              Swal.fire({
+        imageUrl:'images/alan walker.JFIF',
+        imageWidth:'400px',
+        imageHeight:'400px',
+         title: 'Alan Walker Music App',
+         text: 'you can find the most famuse music of Alan Walker here',
+         footer: '<a href="https://www.youtube.com/results?search_query=alan+walker">You can visit Alan Walker channle on youtube to get more</a>'
+               } )
+    </script>
+</body>
+</html>
